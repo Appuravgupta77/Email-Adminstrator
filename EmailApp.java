@@ -11,6 +11,7 @@ public class EmailApp{
         var lastname = in.nextLine();
         Email em1 = new Email(firstname, lastname);
         System.out.println( em1.showInfo());
+	    // Add Try-catch block
         try {    
 		File newFile = new File("filename.txt");
 		FileWriter fileWrite = new FileWriter(newFile, true);
